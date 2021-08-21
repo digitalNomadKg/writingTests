@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="udemyBootcamp" />
+        <module name="university" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="11" />
