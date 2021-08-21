@@ -1,0 +1,40 @@
+import java.util.Scanner;
+
+public class Gradation {
+
+
+    public void star() {
+
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Please enter your mark: 1-5");
+
+        int in = scanner.nextInt();
+
+        while (in > 5) {
+            System.out.println("Check the mark, mark is not valid");
+            in = scanner.nextInt();
+        }
+        switch (in) {
+            case 1:
+                System.out.println("Your mark is 1");
+                break;
+            case 2:
+                System.out.println("Your mark is 2");
+                break;
+            case 3:
+                System.out.println("Your mark is 3");
+                break;
+            case 4:
+                System.out.println("Your mark is 4");
+                break;
+            default:
+                System.out.println("Your mark is 5");
+        }
+    }
+    
+    public static void main(String[] args) {
+        Gradation g = new Gradation();
+        g.star();
+    }
+}
