@@ -2,13 +2,12 @@ import java.util.Scanner;
 
 public class CompareNumbers {
 
-    public void compare() {
+    public void calculate() {
 
         double number, number2, result;
         String inputOperator;
 
         Scanner scanner = new Scanner(System.in);
-
 
         System.out.println("Please enter num1");
         number = scanner.nextDouble();
@@ -17,12 +16,6 @@ public class CompareNumbers {
         System.out.println("Please input operator");
         inputOperator = scanner.next();
 
-
-        while (number == 0 || number2 == 0) {
-            System.out.println("Entered number can't be a ZERO");
-            number = scanner.nextDouble();
-            break;
-        }
 
         switch (inputOperator) {
             case "+":
@@ -51,7 +44,7 @@ public class CompareNumbers {
     public static void main(String[] args) {
 
         CompareNumbers compareNumbers = new CompareNumbers();
-        compareNumbers.compare();
+        compareNumbers.calculate();
 
     }
 }
