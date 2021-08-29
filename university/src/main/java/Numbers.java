@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Numbers {
@@ -6,16 +7,18 @@ public class Numbers {
     //finding even number
 
     public void allNumbers() {
-        for (int i = 0; i < 200; i++) {
-            int num = i + 1;
-            System.out.print(num + ",");
+        for (int i = 1; i <= 200; i++) {
+            if (i % 2 == 0) {
+                System.out.print((i) + ",even ");
+            } else {
+                System.out.println((i) + ",odd ");
+            }
         }
-
+        System.out.println();
         System.out.println("-------------------");
 
-        for(int j=500; j>0; j--){
-            int jb= j-1;
-            System.out.print(jb + ",");
+        for (int j = 500; j >= 1; j--) {
+            System.out.print(j + ",");
         }
     }
 
@@ -24,9 +27,9 @@ public class Numbers {
         Scanner scanner = new Scanner(System.in);
         System.out.println("-----------------");
         System.out.println("Please choose number to check if it is Odd or Even?");
-        int evenNumber = scanner.nextInt();
+        int num = scanner.nextInt();
 
-        if (evenNumber % 2 == 0) {
+        if (num % 2 == 0) {
             System.out.println("This is an even number");
         } else {
             System.out.println("This is an Odd number");
@@ -35,13 +38,13 @@ public class Numbers {
     }
 
 
+
+
     public static void main(String[] args) {
 
         Numbers numb = new Numbers();
         numb.allNumbers();
-
         numb.evenNumber();
-
 
     }
 }
