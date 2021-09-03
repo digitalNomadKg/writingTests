@@ -4,8 +4,8 @@ public class CreatingPattern {
 
     Scanner sc = new Scanner(System.in);
 
+
     public void starTree() {
-        System.out.println("Please choose number form 0 to 10");
         int input = sc.nextInt();
         System.out.println();
         System.out.println("Happy New year");
@@ -35,10 +35,17 @@ public class CreatingPattern {
         }
     }
 
+    public void generateRandomNumber() {
+        for (int r = 1; r <=6; r++) {
+            System.out.println((int) (Math.random()* 50));
+        }
+    }
+
 
     public static void main(String[] args) {
         CreatingPattern pattern = new CreatingPattern();
 
         pattern.starTree();
+        pattern.generateRandomNumber();
     }
 }
