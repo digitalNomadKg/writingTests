@@ -1,7 +1,9 @@
+import java.util.Scanner;
+
 public class TestingArrays {
 
 
-    public void getArray() {
+    private void getArray() {
 
         int[] setArray = {1, 3, 4, 5, 6, 720, 19, 43, 6, 8, 450, 53};
         for (int a = 0; a < setArray.length; a++) {
@@ -36,11 +38,31 @@ public class TestingArrays {
         System.out.println("The length of the array: " + setArray.length);
     }
 
+    private void compareNumbers() {
+
+        int num1, num2;
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Please enter num1:");
+        num1 = scanner.nextInt();
+        System.out.println("Please enter num2");
+        num2 = scanner.nextInt();
+
+        int minNUmber;
+        if (num1 > num2) {
+            minNUmber = num2;
+            System.out.println(minNUmber);
+        } else {
+            minNUmber = num1;
+            System.out.println("The minimum number is " +minNUmber);
+        }
+    }
+
 
     public static void main(String[] args) {
         TestingArrays testingArrays = new TestingArrays();
 
         testingArrays.getArray();
+        testingArrays.compareNumbers();
 
     }
 
