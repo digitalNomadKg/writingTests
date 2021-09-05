@@ -9,7 +9,7 @@ public class TestingArrays {
         }
 
         int largestNumber = setArray[0];
-        for (int i = 0; i < setArray.length; i++) {
+        for (int i = 1; i < setArray.length; i++) {
             if (setArray[i] > largestNumber) {
                 largestNumber = setArray[i];
             }
@@ -17,7 +17,7 @@ public class TestingArrays {
         System.out.println("the largest number is: " + largestNumber);
 
         int smallestNumber = setArray[0];
-        for (int s = 0; s > setArray.length; s--) {
+        for (int s = 1; s > setArray.length; s--) {
             if (setArray[s] > smallestNumber) {
                 smallestNumber = setArray[s];
 
@@ -25,9 +25,16 @@ public class TestingArrays {
         }
         System.out.println("the smallest number is: " + smallestNumber);
 
+        int sum = 0;
+        for (int i = 0; i < setArray.length; i++) {
+            sum += setArray[i];
+
+        }
+        System.out.println(sum);
+
+
         System.out.println("The length of the array: " + setArray.length);
     }
-
 
 
     public static void main(String[] args) {
