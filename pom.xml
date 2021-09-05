@@ -11,6 +11,7 @@
     <modules>
         <module>udemyBootcamp</module>
         <module>university</module>
+        <module>toDoList</module>
     </modules>
 
     <dependencies>
