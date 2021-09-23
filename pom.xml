@@ -12,6 +12,7 @@
         <module>udemyBootcamp</module>
         <module>university</module>
         <module>toDoList</module>
+        <module>exceptions</module>
     </modules>
 
     <dependencies>

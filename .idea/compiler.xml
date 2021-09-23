@@ -7,10 +7,12 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="toDoList" />
-        <module name="udemyBootcamp" />
         <module name="university" />
+        <module name="exceptions" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel target="11" />
+    <bytecodeTargetLevel target="11">
+      <module name="udemyBootcamp" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>
