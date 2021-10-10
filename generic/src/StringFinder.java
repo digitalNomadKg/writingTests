@@ -18,6 +18,8 @@ public class StringFinder {
 
         System.out.printf("Max is %s", stringFinder("NewIdeAcomesFrom", "Hippopotamus", "HelloCHkaksjdkrazyWorld"));
 
+        Holder<String> holder = new Holder<>();
+        holder.setMyVar(new String());
     }
 
 }

@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/bankApp/bankApp.iml" filepath="$PROJECT_DIR$/bankApp/bankApp.iml" />
       <module fileurl="file://$PROJECT_DIR$/generic/generic.iml" filepath="$PROJECT_DIR$/generic/generic.iml" />
+      <module fileurl="file://$PROJECT_DIR$/myLinkedList/myLinkedList.iml" filepath="$PROJECT_DIR$/myLinkedList/myLinkedList.iml" />
     </modules>
   </component>
 </project>
